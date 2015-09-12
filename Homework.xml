@@ -1,33 +1,33 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="15" x="182" y="0">
+  <block type="oled_cleardisplay" id="1" x="182" y="0">
     <next>
-      <block type="oled_setcursor" id="24" inline="true">
+      <block type="oled_setcursor" id="2" inline="true">
         <value name="STARTX">
-          <block type="math_number" id="31">
+          <block type="math_number" id="3">
             <field name="NUM">10</field>
           </block>
         </value>
         <value name="STARTY">
-          <block type="math_number" id="38">
+          <block type="math_number" id="4">
             <field name="NUM">10</field>
           </block>
         </value>
         <next>
-          <block type="oled_drawtext" id="47">
-            <field name="TEXT">12345 - 287 = </field>
+          <block type="oled_drawtext" id="5">
+            <field name="TEXT">123456 % 1234567890</field>
             <next>
-              <block type="oled_drawnumber" id="56" inline="true">
+              <block type="oled_drawnumber" id="6" inline="true">
                 <value name="NUMBER">
-                  <block type="math_arithmetic" id="63" inline="true">
-                    <field name="OP">MINUS</field>
+                  <block type="math_arithmetic" id="7" inline="true">
+                    <field name="OP">MODULO</field>
                     <value name="A">
-                      <block type="math_number" id="70">
-                        <field name="NUM">12345</field>
+                      <block type="math_number" id="8">
+                        <field name="NUM">123456</field>
                       </block>
                     </value>
                     <value name="B">
-                      <block type="math_number" id="77">
-                        <field name="NUM">287</field>
+                      <block type="math_number" id="9">
+                        <field name="NUM">1234567890</field>
                       </block>
                     </value>
                   </block>
