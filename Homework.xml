@@ -19,7 +19,7 @@
               <block type="oled_drawnumber" id="6" inline="true">
                 <value name="NUMBER">
                   <block type="math_arithmetic" id="7" inline="true">
-                    <field name="OP">MODULO</field>
+                    <field name="OP">DIVIDE</field>
                     <value name="A">
                       <block type="math_number" id="8">
                         <field name="NUM">123456</field>
